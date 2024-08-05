@@ -12,8 +12,8 @@ export default function Portfolio() {
       <Navbar />
       <Hero />
       <InformationSection />
-      <Testimonial />
-      <Footer />
+      {/* <Testimonial /> */}
+      {/* <Footer /> */}
     </>
   );
 }

@@ -8,7 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 
-const NAV_MENU = ["Home", "About Us", "Contact Us"];
+const NAV_MENU = [];
 
 function NavItem({ children }: { children: React.ReactNode }) {
   return (
@@ -56,19 +56,14 @@ export function Navbar() {
           color="blue-gray"
           className="text-lg font-bold"
         >
-          Material Tailwind
+          Professional Profile
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map((nav) => (
             <NavItem key={nav}>{nav}</NavItem>
           ))}
         </ul>
-        <div className="hidden items-center gap-2 lg:flex">
-          <Button variant="text">Log in</Button>
-          <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color="gray">blocks</Button>
-          </a>
-        </div>
+
         <IconButton
           variant="text"
           color="gray"
@@ -89,12 +84,6 @@ export function Navbar() {
               <NavItem key={nav}>{nav}</NavItem>
             ))}
           </ul>
-          <div className="mt-6 mb-4 flex items-center gap-2">
-            <Button variant="text">Log in</Button>
-            <a href="https://www.material-tailwind.com/blocks" target="_blank">
-              <Button color="gray">blocks</Button>
-            </a>
-          </div>
         </div>
       </Collapse>
     </MTNavbar>
