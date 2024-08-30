@@ -8,7 +8,7 @@ import {
 
 import InfoCard from "@/components/info-card";
 
-const EDUCATION = [
+const EDUCATION: any[] = [
   // {
   //   icon: AcademicCapIcon,
   //   title: "Certified Web Developer - Web Development Institute",
@@ -39,7 +39,7 @@ const EDUCATION = [
   // },
 ];
 
-const EXPERIENCE = [
+const EXPERIENCE: any[] = [
   // {
   //   icon: BriefcaseIcon,
   //   title: "Freelancer Web Developer",
@@ -70,7 +70,7 @@ const EXPERIENCE = [
   // },
 ];
 
-const SKILLS = [
+const SKILLS: any[] = [
   // {
   //   icon: FireIcon,
   //   title: "Front-End Frameworks",
@@ -107,10 +107,11 @@ export function InformationSection() {
       <div className="grid xl:grid-cols-2 md:grid-cols-1 container gap-20 mx-auto items-start">
         <div>
           <div className="mb-10">
-            <Typography color="blue-gray" className="mb-2 text-3xl font-bold">
+            <Typography color="blue-gray" className="mb-2 text-3xl font-bold" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
               Education & Certifications
             </Typography>
-            <Typography variant="lead" className="!text-gray-500">
+            <Typography placeholder={""} onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
+              variant="lead" className="!text-gray-500">
               See my education history.
             </Typography>
           </div>
@@ -120,29 +121,17 @@ export function InformationSection() {
             ))}
           </div>
         </div>
-        <div>
-          <div className="mb-10">
-            <Typography color="blue-gray" className="mb-2 text-3xl font-bold">
-              Experience
-            </Typography>
-            <Typography variant="lead" className="!text-gray-500">
-              See my experience as a developer.
-            </Typography>
-          </div>
-          <div className="container mx-auto grid grid-cols-1 gap-16 gap-y-12">
-            {EXPERIENCE.map((props, idx) => (
-              <InfoCard key={idx} {...props} />
-            ))}
-          </div>
-        </div>
+        <Typography variant="lead" className="!text-gray-500" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+          See my experience as a developer.
+        </Typography>
       </div>
       <div className="container gap-20 mt-36 mx-auto items-center">
         <div>
           <div className="mb-10">
-            <Typography color="blue-gray" className="mb-2 text-3xl font-bold">
+            <Typography color="blue-gray" className="mb-2 text-3xl font-bold" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
               Skills
             </Typography>
-            <Typography variant="lead" className="!text-gray-500">
+            <Typography variant="lead" className="!text-gray-500" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
               Check out my technical and soft skills.
             </Typography>
           </div>

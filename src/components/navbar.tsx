@@ -8,12 +8,13 @@ import {
 } from "@material-tailwind/react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 
-const NAV_MENU = [];
+const NAV_MENU: any[] = [];
 
 function NavItem({ children }: { children: React.ReactNode }) {
   return (
     <li>
       <Typography
+        placeholder={""} onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
         as="a"
         href="#"
         variant="paragraph"
@@ -47,9 +48,13 @@ export function Navbar() {
       shadow={false}
       color="white"
       className="sticky top-0 z-50 border-0"
+      placeholder={""}
+      onPointerEnterCapture={() => {}}
+      onPointerLeaveCapture={() => {}}
     >
       <div className="container mx-auto flex items-center justify-between">
         <Typography
+          placeholder={""} onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
           as="a"
           href="https://www.material-tailwind.com"
           target="_blank"
@@ -65,6 +70,9 @@ export function Navbar() {
         </ul>
 
         <IconButton
+          placeholder={""}
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
           variant="text"
           color="gray"
           onClick={handleOpen}
