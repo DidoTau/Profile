@@ -1,19 +1,5 @@
-// components
-import { Navbar, Footer } from "@/components";
+import Terminal from "@/components/Terminal";
 
-// sections
-import Hero from "./hero";
-import InformationSection from "./information-section";
-import Testimonial from "./testimonial";
-
-export default function Portfolio() {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <InformationSection />
-      {/* <Testimonial /> */}
-      {/* <Footer /> */}
-    </>
-  );
+export default function Home() {
+  return <Terminal />;
 }
