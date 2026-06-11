@@ -175,6 +175,7 @@ const COMMANDS: Record<string, () => TerminalLine[]> = {
     { text: "│", type: "bright" },
     { text: "│  GitHub   → github.com/DidoTau", type: "link", href: "https://github.com/DidoTau" },
     { text: "│  LinkedIn → linkedin.com/in/estebanjramirezfuenzalida", type: "link", href: "https://www.linkedin.com/in/estebanjramirezfuenzalida/" },
+    { text: "│  Web      → didotau.github.io", type: "link", href: "https://didotau.github.io" },
     { text: "│", type: "bright" },
     { text: "└────────────────────────────────────────────────────────┘", type: "bright" },
     { text: "" },
