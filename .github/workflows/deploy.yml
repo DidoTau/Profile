@@ -26,10 +26,11 @@ jobs:
       - name: Build the project
         run: npm run build
 
-      - name: Sync to S3
+      - name: Sync to S3 y invalidar CloudFront
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: 'us-west-2' # Cambia esto según tu región
+          AWS_REGION: 'us-west-2'
         run: |
           aws s3 sync out/ s3://eramirezfuenzalida.com --delete
+          aws cloudfront create-invalidation --distribution-id E2XHLWMXFWOUNP --paths "/*"
