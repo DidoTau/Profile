@@ -31,4 +31,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: 'us-west-2' # Cambia esto según tu región
         run: |
-          aws s3 sync out/ s3://eramirezfuenzalida --delete
+          aws s3 sync out/ s3://eramirezfuenzalida.com --delete
